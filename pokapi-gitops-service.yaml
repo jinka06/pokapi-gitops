@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: pokapi
+  name: pokapi
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 8000
+    nodePort: 30065
+  selector:
+    app: pokapi
+  type: NodePort

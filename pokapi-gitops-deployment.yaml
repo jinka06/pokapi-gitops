@@ -14,7 +14,7 @@ spec:
         app: pokapi
     spec:
       containers:
-      - image: jinkura/pokapi:a8cdebc
+      - image: jinkura/pokapi:d51bf6e
         name: pokapi
         ports:
         - containerPort: 8000
